@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="SJZZ05">
+  <link name="World">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="22.392693 8.344533 1.0516282" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/Cube.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.609318 20.167873 1.3134253" rpy="0. 0. -0.7853982"/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/AprilTag01.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.387318 20.944075 1.3156673" rpy="0. 0. -0.7853982"/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/AprilTag02.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______078.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.186035 20.589844 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______094.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.256836 20.660156 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______116.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.19069 20.997381 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______115.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.19069 20.99738 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______114.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.263584 21.068758 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______113.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.263584 21.06876 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______112.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.122164 20.927338 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______111.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.122164 20.92734 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______110.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.980743 20.78592 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______109.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.980743 20.785917 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______108.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.83932 20.644497 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______107.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.83932 20.644495 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______106.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="20.5903 22.994106 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______105.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="20.166042 22.569118 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______104.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="20.024685 22.428493 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______103.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.600191 22.00351 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______102.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.458838 21.862885 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______101.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="19.034578 21.4379 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______100.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.89322 21.297276 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______099.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="17.832483 20.236294 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______098.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="17.973906 20.377712 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______097.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.256746 20.660557 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______096.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="18.115328 20.519135 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______095.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="14.656494 28.328125 3.000244" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______089.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="16.263184 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______093.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15.64917 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______092.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="12.649415 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______091.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="13.263672 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______090.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="32.95898 17.400389 -0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______088.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="31.731443 -29.371092 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______087.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0000002 -0.0000002 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______086.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="25.612305 -2.105469 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______085.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="35.13086 0.1621093 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______084.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="32.863277 -2.107422 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______083.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="11.043946 -2.294922 -0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______080.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="-0.0000002 -0.0000002 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______079.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="16.394043 12.003906 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______081.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="16.563232 -2.0917976 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______082.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="14.483965 29.731209 3. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti________006.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15.963411 29.823093 2.7644048" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti003________007.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15.657259 28.528172 2.1499028" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti003_dianti004________008.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="16.271519 28.528172 2.1499028" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti003_dianti005________009.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="12.963655 29.823093 2.7644048" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti000_001________010.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="12.657503 28.528172 2.1499028" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti000_001_dianti001________012.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="13.271761 28.528172 2.1499028" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_dianti000_001_dianti002________011.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15946.62 29808.104 2764.518" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01________006.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15948.1 29808.195 2764.2825" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti003________007.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15947.793 29806.9 2763.668" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti003_dianti004________008.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15948.407 29806.9 2763.668" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti003_dianti005________009.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15945.1 29808.195 2764.2825" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti000_001________010.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15944.793 29806.9 2763.668" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti000_001_dianti001________012.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="15945.407 29806.9 2763.668" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/dianti_01_dianti000_001_dianti002________011.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="22.392693 8.344533 1.0516282" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/Cube.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______078.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.186035 20.589844 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______094.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.256836 20.660156 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______116.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.19069 20.997381 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______115.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.19069 20.99738 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______114.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.263584 21.068758 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______113.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.263584 21.06876 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______112.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.122164 20.927338 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______111.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.122164 20.92734 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______110.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.980743 20.78592 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______109.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.980743 20.785917 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______108.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.83932 20.644497 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______107.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.83932 20.644495 1.4055177" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______106.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="20.5903 22.994106 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______105.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="20.166042 22.569118 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______104.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="20.024685 22.428493 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______103.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.600191 22.00351 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______102.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.458838 21.862885 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______101.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="19.034578 21.4379 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______100.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.89322 21.297276 0.3818359" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______099.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="17.832483 20.236294 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______098.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="17.973906 20.377712 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______097.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.256746 20.660557 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______096.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="18.115328 20.519135 0.3129883" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______095.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="14.656494 28.328125 3.000244" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______089.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="16.263184 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______093.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="15.64917 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______092.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="12.649415 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______091.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="13.263672 28.44922 2.1501462" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______090.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="31.731443 -29.371092 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______087.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="25.612305 -2.105469 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______085.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="35.13086 0.1621093 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______084.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="32.863277 -2.107422 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______083.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="11.043946 -2.294922 -0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______080.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.0000002 -0.0000002 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______079.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="16.394043 12.003906 0. " rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______081.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="16.563232 -2.0917976 0.3002929" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/code/meshes/_______082.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
