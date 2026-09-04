@@ -1,0 +1,165 @@
+# R1 遥控仿真操作流程
+
+本文从启动 Docker 容器开始，目标是在 TurboVNC `:21` 桌面中打开 Gazebo 博物馆 world，并用 `yarpMobilebaseGUI` 遥控 R1Mk3。
+
+## 1. 进入脚本目录
+
+```bash
+cd /home/maxw/R1_遥控仿真
+```
+
+## 2. 启动容器和仿真
+
+```bash
+./r1遥控仿真.sh start(更换地图后启动为WORLD=/gazebo_models/datacenter.sdf ./r1遥控仿真.sh start)
+```
+
+这个命令会自动完成以下步骤：
+
+1. 停止旧的 `docker_sim_compose-sim-run-*` 仿真容器，避免 YARP 端口冲突。
+2. 停止并删除旧的 `r1-toursim-compose` 容器。
+3. 启动新的 `r1-toursim-compose` 容器。
+4. 在容器内运行 `sim_up.sh`，启动：
+   - `yarpserver`
+   - `gz sim`
+   - `yarprun`
+   - `yarplogger`
+   - `yarpmanager`
+5. 等待 `/r1mk3Sim/mobile_base/*` 底盘端口出现。
+6. 在容器内运行 `drive_up.sh`，启动：
+   - `baseControl2`
+   - `yarpMobilebaseGUI`
+7. 自动连接遥控 GUI 到底盘控制链路。
+
+启动完成后，终端会打印 `ready`，并显示容器、进程、YARP 端口和 VNC 窗口状态。
+
+## 3. 连接 TurboVNC
+
+用 VNC 客户端连接主机的 TurboVNC `:21` 桌面。
+
+进入桌面后应能看到这些窗口：
+
+- `Gazebo Sim`
+- `YARP module manager`
+- `QtYarprun Logger`
+- `yarpMobilebaseGUI`
+
+如果 `yarpMobilebaseGUI` 被遮挡或最小化，在窗口列表里找 `yarpMobilebaseGUI`。
+
+## 4. 遥控机器人
+
+在 TurboVNC `:21` 桌面中操作 `yarpMobilebaseGUI`：
+
+1. 找到圆形摇杆区域。
+2. 按住并拖动摇杆。
+3. R1Mk3 会在 Gazebo 博物馆 world 中移动。
+4. 松开摇杆后，速度命令回到 0。
+
+## 5. 检查运行状态
+
+```bash
+./r1遥控仿真.sh status
+```
+
+重点确认：
+
+- 容器 `r1-toursim-compose` 状态为 `Up`
+- 进程中有 `gz sim`、`yarpmanager`、`baseControl2`、`yarpmobilebasegui`
+- YARP 端口中有：
+  - `/root`
+  - `/clock`
+  - `/r1mk3Sim/mobile_base/command:i`
+  - `/r1mk3Sim/mobile_base/rpc:i`
+  - `/baseControl/rpc`
+  - `/yarpmobilebasegui:o`
+
+## 6. 查看日志
+
+查看仿真容器日志：
+
+```bash
+./r1遥控仿真.sh logs
+```
+
+查看遥控链路日志：
+
+```bash
+./r1遥控仿真.sh drive-logs
+```
+
+退出日志跟随模式按 `Ctrl-C`。
+
+## 7. 进入容器调试
+
+```bash
+./r1遥控仿真.sh shell
+```
+
+容器内常用检查命令：
+
+```bash
+yarp name list
+yarp ping /r1mk3Sim/mobile_base/rpc:i
+yarp ping /baseControl/rpc
+yarp name query /yarpmobilebasegui:o
+```
+
+退出容器 shell：
+
+```bash
+exit
+```
+
+## 8. 停止仿真
+
+```bash
+./r1遥控仿真.sh stop（改了地图后WORLD=/gazebo_models/datacenter.sdf ./r1遥控仿真.sh stop）
+```
+
+这个命令会停止：
+
+- `r1-toursim-compose`
+- 旧的 `docker_sim_compose-sim-run-*` 仿真容器
+
+## 9. 常见问题
+
+### 9.1 启动时报 YARP address conflict
+
+通常是旧容器或旧进程占用了 YARP 端口。直接执行：
+
+```bash
+./r1遥控仿真.sh stop
+./r1遥控仿真.sh start
+```
+
+### 9.2 VNC 里看不到窗口
+
+先检查 `:21` 的 X socket 是否存在：
+
+```bash
+ls -l /tmp/.X11-unix/X21
+```
+
+再检查脚本状态：
+
+```bash
+./r1遥控仿真.sh status
+```
+
+如果容器和进程都正常，窗口可能被遮挡或最小化。
+
+### 9.3 GUI 有但机器人不动
+
+检查遥控链路：
+
+```bash
+./r1遥控仿真.sh status
+./r1遥控仿真.sh drive-logs
+```
+
+如果 `/baseControl/rpc` 或 `/yarpmobilebasegui:o` 不存在，重启：
+
+```bash
+./r1遥控仿真.sh stop
+./r1遥控仿真.sh start
+```
